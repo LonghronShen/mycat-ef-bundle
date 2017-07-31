@@ -1,7 +1,7 @@
 version: '2'
 services:
   mycat-docker:
-    image: LonghronShen/mycat-docker
+    image: longhronshens/mycat-docker
     restart: always
     volumes:
     - ./mycat/conf/:/usr/local/mycat/conf/
@@ -9,7 +9,7 @@ services:
     - "8066:8066"
     - "9066:9066"
   mycat-ef:
-    image: LonghronShen/mycat-ef
+    image: longhronshens/mycat-ef
     restart: always
     volumes:
     - ./mycat/:/usr/local/mycat/
